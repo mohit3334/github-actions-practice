@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello world from github actions</h1>
+      <h1>Hello world from github action</h1>
     </>
   )
 }
