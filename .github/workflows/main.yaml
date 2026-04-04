@@ -1,12 +1,30 @@
-name: My First Workflow
+name: React CI Pipeline
 
 on: push
 
 jobs:
-  test-jobs:
+  build:
     runs-on: ubuntu-latest
 
 
     steps:
-      - name: Say Hello
-        run: echo "I am learning GitHub Actions 🚀"
+      - name: checkout code
+        uses: checkout/actions@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18, 19, 20
+
+      - name: Go to project folder 
+        run: cd new-react
+
+      - name: Install dependencies
+        run: |
+          cd new-reacr
+          npm install
+
+      - name: Build project
+        run: |
+          cd new-react
+          npm run build    
