@@ -14,14 +14,14 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18, 19, 20
+          node-version: 18
 
       - name: Go to project folder 
         run: cd new-react
 
       - name: Install dependencies
         run: |
-          cd new-reacr
+          cd new-react
           npm install
 
       - name: Build project
