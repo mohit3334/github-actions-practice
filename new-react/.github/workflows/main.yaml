@@ -1,0 +1,12 @@
+name: My First Workflow
+
+on: push
+
+jobs:
+  test-jobs:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Say Hello
+        run: echo "I am learning GitHub Actions 🚀"
