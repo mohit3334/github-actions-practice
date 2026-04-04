@@ -26,6 +26,11 @@ jobs:
           cd new-react
           npm install
 
+      - name: "Run Tests"
+        run: |
+          cd new-react
+          npm run test
+
       - name: Build project
         run: |
           cd new-react
