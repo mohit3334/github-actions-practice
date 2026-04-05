@@ -76,4 +76,4 @@ jobs:
 
       - name: Push Image
         run: |
-          docker push ${{secrets.DOCKER_HUB_USERNAME}}/my-new-reat-app:v1     
+          docker push ${{secrets.DOCKER_HUB_USERNAME}}/my-new-react-app:v1     
