@@ -65,3 +65,8 @@ jobs:
         run: |
           cd new-react
           npm run build    
+
+      - name: Build Image
+        run: |
+          cd new-react
+          docker build -t my-new-react-app .
